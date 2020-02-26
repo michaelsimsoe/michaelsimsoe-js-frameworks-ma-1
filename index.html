@@ -3,7 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Slide Test</title>
+    <title>Awesome Pictures 2000</title>
+    <style>
+      body {
+        background-color: #e8eff5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #525252;
+      }
+      .slider-btns {
+      }
+      .btn {
+        background-color: #e8eff5;
+        height: 100px;
+        width: 100px;
+        border-radius: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 400ms ease;
+        color: #727272;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        box-shadow: 7px 7px 15px #bbcfda, -4px -4px 13px #fff,
+          inset 4px 4px 8px rgba(209, 217, 230, 0.2),
+          inset -8px -8px 8px rgba(255, 255, 255, 0.2);
+      }
+
+      .btn:hover {
+        background: radial-gradient(#e0e0e0d7, #f0f0f573);
+      }
+      .btn:active {
+        box-shadow: 4px 2px 18px #bbcfda, -4px -4px 13px #fff,
+          inset 6px 6px 16px rgba(209, 217, 230, 0.8),
+          inset -8px -8px 8px rgba(255, 255, 255, 0.2);
+      }
+
+      .btn:focus,
+      .btn:active {
+        outline: 0;
+      }
+      .prev-btn {
+        margin-right: 2em;
+      }
+      .next-btn {
+        margin-left: 2em;
+      }
+    </style>
   </head>
   <body>
     <div id="gallery">

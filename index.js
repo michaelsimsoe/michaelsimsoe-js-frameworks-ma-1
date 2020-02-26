@@ -5,5 +5,9 @@ window.jQuery = $;
 
 $('document').ready(function() {
   require('super-simple-jquery-slideshow');
-  $('#gallery').slideShow();
+  $('#gallery').slideShow({
+    buttonMenu: 'slider-btns',
+    prevBtnClass: 'btn prev-btn',
+    nextBtnClass: 'btn next-btn'
+  });
 });
